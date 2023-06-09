@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/satyamsingh/Desktop/100-Days-of-Code/Day 3",
+      "program": "/Users/satyamsingh/Desktop/100-Days-of-Code/Day 3/build/Debug/outDebug"
+    }
+  ]
+}
