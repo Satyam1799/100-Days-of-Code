@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/satyamsingh/Desktop/100-Days-of-Code/Day 3",
-      "program": "/Users/satyamsingh/Desktop/100-Days-of-Code/Day 3/build/Debug/outDebug"
+      "cwd": "/Users/satyamsingh/Desktop/100-Days-of-Code/Day 5",
+      "program": "/Users/satyamsingh/Desktop/100-Days-of-Code/Day 5/build/Debug/outDebug"
     }
   ]
 }
