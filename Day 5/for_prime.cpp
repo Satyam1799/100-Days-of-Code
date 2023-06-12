@@ -1,17 +1,25 @@
 #include<iostream>
 using namespace std;
+
 int main()
 {
-	int n;
-	cout<<" enter the value of n"<<endl;
-	cin>>n;
+    int n;
+    cout << "Enter the value of n: ";
+    cin >> n;
 
-	for (int i=2 ; i<n ; i++){
-		
-		//rem = 0, not a prime
-		if(n % i ==0){
-			cout<<"Not a prime number"<<endl;
-		}
-	}
- return 0;
+    bool isPrime = true; // Assume the number is prime initially
+
+    for (int i = 2; i < n; i++) {
+        if (n % i == 0) {
+            isPrime = false; // Number is divisible, not a prime
+            break;
+        }
+    }
+
+    if (isPrime)
+        cout << "Prime number" << endl;
+    else
+        cout << "Not a prime number" << endl;
+
+    return 0;
 }
