@@ -10,6 +10,7 @@ int main()
     bool isPrime = true; // Assume the number is prime initially
 
     for (int i = 2; i < n; i++) {
+        //rem = 0 , not a prime
         if (n % i == 0) {
             isPrime = false; // Number is divisible, not a prime
             break;
