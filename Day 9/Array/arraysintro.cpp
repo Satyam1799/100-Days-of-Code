@@ -55,6 +55,18 @@ int main()
   int fifthsize= sizeof(fifth)/sizeof(int);
   cout<<"Size if Fifth is "<< fifthsize<< endl;
 
+  char ch[5] ={ 'a' , 'b' , 'c' , 'e','d'};
+  cout<<ch[3];
+
+    cout<<endl<<"printing the array"<<endl;
+//print the array
+  for(int i=0 ; i<5; i++){
+	cout<<ch[i]<<" ";
+	
+  }
+  cout<<endl<<"printing DONE"<<endl;
+
+  //isi prakar kisi bhi data type ka operator array me aa skta h
 
 
 
