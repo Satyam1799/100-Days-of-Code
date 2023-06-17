@@ -8,7 +8,7 @@ void printArray(int arr[] , int size){
 	cout<<arr[i]<<" ";
 	
   }
-  cout<<endl<<"printing DONE";
+  cout<<endl<<"printing DONE"<<endl;
 }
 
 
@@ -51,6 +51,10 @@ int main()
   n=15;
   
   printArray(fifth , 15);
+
+  int fifthsize= sizeof(fifth)/sizeof(int);
+  cout<<"Size if Fifth is "<< fifthsize<< endl;
+
 
 
 
