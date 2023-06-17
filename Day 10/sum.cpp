@@ -12,3 +12,5 @@ int main()
 	cout<<"sum of array is "<< sum <<endl;
  return 0;
 }
+
+//
