@@ -1,3 +1,7 @@
+
+//Coding Ninja Quetion of unique element in array
+
+
 int findUnique(int *arr, int size)
 {
     int ans = 0;
@@ -11,4 +15,3 @@ int findUnique(int *arr, int size)
 
 
 
-//Coding Ninja Quetion of unique element in array
