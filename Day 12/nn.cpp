@@ -45,3 +45,67 @@ int main() {
 
     return 0;
 }
+#include<iostream>
+using namespace std;
+
+int firstOcc(int arr[], int n, int key) {
+	int start = 0;
+	int end = n - 1;
+
+	int ans = -1;
+
+	while (start <= end) {
+		int mid = start + (end - start) / 2;
+
+		if (arr[mid] == key) {
+			ans = mid;
+			end = mid - 1;
+		}
+		else if (key > arr[mid]) {
+			start = mid + 1;
+		}
+		else if (key < arr[mid]) {
+			end = mid - 1;
+		}
+	}
+
+	return ans;
+}
+
+int lastOcc(int arr[], int n, int key) {
+	int start = 0;
+	int end = n - 1;
+
+	int ans = -1;
+
+	while (start <= end) {
+		int mid = start + (end - start) / 2;
+
+		if (arr[mid] == key) {
+			ans = mid;
+			start = mid + 1;
+		}
+		else if (key > arr[mid]) {
+			start = mid + 1;
+		}
+		else if (key < arr[mid]) {
+			end = mid - 1;
+		}
+	}
+
+	return ans;
+}
+
+int totalOcc(int arr[], int n, int key) {
+	int firstOccur = firstOcc(arr, n, key);
+	int lastOccur = lastOcc(arr, n, key);
+	int total = lastOccur - firstOccur + 1;
+	return total;
+}
+
+int main() {
+	int even[7] = { 1, 2, 3, 3, 3, 3, 6 };
+	cout << "Number of occurrences: " << totalOcc(even, 7, 3) << endl;
+
+	return 0;
+}

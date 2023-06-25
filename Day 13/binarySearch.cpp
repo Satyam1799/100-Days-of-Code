@@ -10,12 +10,15 @@ int firstOcc(int arr[] , int n , int key){
 
 	while (start <= end){
 
-	if(arr[mid] == key){
+
+	    if(arr[mid] == key){
 		ans = mid ;
 		end = mid -1;
+
 	}
 
-	if (key > arr[mid]){
+
+	    if (key > arr[mid]){
 		start = mid + 1;
 
 	}
